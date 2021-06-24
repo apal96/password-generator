@@ -15,7 +15,12 @@ generateBtn.addEventListener("click", writePassword);
 
 //generate password function
 function generatePassword(){
- var passLength=prompt("How many characters should the password contain? /n (Please choose a length between 8 and 128.) ");
- 
+ var passLengthPrompt=prompt("How many characters should the password contain?\n(Please choose a length between 8 and 128 characters.) ");
+ var specialCharacterConfirm = confirm("Click to confirm using special characters");
+ var upperCaseConfirm = confirm("Click to confirm using upper case characters");
+ var lowerCaseConfirm = confirm("Click to confirm using lower case characters");
+
+
+
 
 }
