@@ -12,8 +12,11 @@ var passOptions = {
   lowercaseConfirm:true,
 }
 
+
 // Write password to the #password input
 function writePassword() {
+  userPassSelctions();
+  
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -24,7 +27,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function userPassSelctions(specialCharacter,upperCase,lowerCase){
+function userPassSelctions(){
   var passLength=prompt("How many characters should the password contain?) ");
   console.log(passLength)
   if(passLength<8){
@@ -41,4 +44,9 @@ function userPassSelctions(specialCharacter,upperCase,lowerCase){
   }else{
   alert("Please enter an integer between 8 and 128") 
   }
-}
+};
+function generatePassword(){
+ console.log(passOptions.specialCharConfirm)
+ console.log(passOptions.uppercaseConfirm)
+ console.log(passOptions.lowercaseConfirm)
+};
