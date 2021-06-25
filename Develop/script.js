@@ -32,13 +32,19 @@ function generatePassword(){
  var specialCharacter= confirm("Click OK to confirm using special characters");
  var upperCase = confirm("Click OK to confirm using upper case characters");
  var lowerCase = confirm("Click OK to confirm using lower case characters");
+ for (var i=0;i<passLength;i++){
+   var pass = Math.floor(Math.random()*specialChar.length)
+   //console.log(pass)
+   console.log(specialChar[pass])
+   password.textContent =specialChar;
+
+ }
+
+
 }else{
   alert("Please enter an integer between 8 and 128") 
 }
-
-
 }
 function randomGenerator(){
-
 
 }
