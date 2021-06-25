@@ -7,6 +7,7 @@ var specialCharacters = "\!\@\#\$\%\^\&\*\(\)\_\-";
 var specialChar = specialCharacters.split('')
 //object for password options
 var passOptions = {
+  passwordLength: 0,
   specialCharConfirm: true,
   uppercaseConfirm: true,
   lowercaseConfirm:true,
@@ -29,6 +30,7 @@ generateBtn.addEventListener("click", writePassword);
 
 function userPassSelctions(){
   var passLength=prompt("How many characters should the password contain?) ");
+  passOptions.passwordLength = passLength;
   console.log(passLength)
   if(passLength<8){
    alert("Password needs atleast 8 characters")
@@ -49,4 +51,22 @@ function generatePassword(){
  console.log(passOptions.specialCharConfirm)
  console.log(passOptions.uppercaseConfirm)
  console.log(passOptions.lowercaseConfirm)
+ console.log(passOptions.passwordLength)
+ if(passOptions.specialCharConfirm &&passOptions.uppercaseConfirm,passOptions.lowercaseConfirm ){
+  //  for(var i = 0; i<alphabetNumbers.length;i++)
+  //  var pass = Math.floor(Math.random()*alphabetNumbers.length)
+  var alphaChar = randomGenerator(alphabetNumbers.length);
+  console.log(alphaChar)
+  //  console.log(alphabetNumbers[p])
+  //  console.log(specialCharacters[p])
+  //  console.log(alphabetNumbers.toUpperCase[p])
+
+
+ }
+ 
+};
+function randomGenerator(key){
+   var pass = Math.floor(Math.random()*key.length)
+   return[key[pass]]
+
 };
