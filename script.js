@@ -57,8 +57,7 @@ function generatePassword(){
   var randomAlphNum = randomGenerator(alphabetNumbers);
   var randomSpecialChar = randomGenerator(specialCharacters);
   var randomUpperCase = randomGenerator(upperA);
-  
-  function randomArray(array){
+  function randomArray(passw){
     var array = ["randomAlphNum","randomSpecialChar","randomUpperCase"]
     var arrayGen = Math.floor(Math.random()*passw.length);
     console.log(passw[arrayGen])
