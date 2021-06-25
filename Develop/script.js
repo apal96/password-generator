@@ -1,7 +1,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var passCharacters = ["abcdegfhijklmnopqrstuvwxyz1234567890\!\@\#\$\%\^\&\*\(\)\_\-"]
-console.log(passCharacters);
+var alphabet = "abcdegfhijklmnopqrstuvwxyz1234567890";
+var letterNumbers = alphabet.split('')
+var specialCharacters = "\!\@\#\$\%\^\&\*\(\)\_\-";
+var specialChar = specialCharacters.split('')
+console.log(specialChar);
 
 
 // Write password to the #password input
@@ -32,9 +35,6 @@ function generatePassword(){
 }else{
   alert("Please enter an integer between 8 and 128") 
 }
-
-
-
 
 
 }
