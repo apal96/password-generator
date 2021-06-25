@@ -1,6 +1,6 @@
 # password-generator
 
-This project uses html,css and javascript to create a page where a user can generate a password basen on the criteria of their choosing.
+This project uses html,css and javascript to create a page where a user can generate a password based on the criteria of their choosing.
 
 ## Getting Started
 https://apal96.github.io/password-generator/
@@ -17,13 +17,13 @@ https://apal96.github.io/password-generator/
 ## Deployed Link
 
 * [See Live Site](https://apal96.github.io/password-generator/)
-![Alt text](/Users/apal/Desktop/Homework/password-generator/password-generator/password-gen.gif?raw=true)
+![Deployed Website Gif](password-gen.gif?raw=true)
 
 
 
 ## Authors
 
-* **YOUR NAME** 
+* **Alisha Pal** 
 
 - [Link to Portfolio Site](https://apal96.github.io/alisha-portfolio/)
 - [Link to Github](https://github.com/apal96)
