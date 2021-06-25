@@ -57,26 +57,27 @@ function generatePassword(){
   var randomAlphNum = randomGenerator(alphabetNumbers);
   var randomSpecialChar = randomGenerator(specialCharacters);
   var randomUpperCase = randomGenerator(upperA);
-  function randomArray(passw){
-    var array = ["randomAlphNum","randomSpecialChar","randomUpperCase"]
-    var arrayGen = Math.floor(Math.random()*passw.length);
-    console.log(passw[arrayGen])
-    return passw[arrayGen]
-  }
+  var randomArray = ["randomAlphNum","randomSpecialChar","randomUpperCase"];
+  function randomArrayGen(){
+    var array = Math.floor(Math.random()*randomArray.length)
+    console.log(randomArray[array])
+    var idk = array.valueOf
+    console.log(idk)
+    return randomArray[array];
+    
+ };
 
  if(passOptions.specialCharConfirm &&passOptions.uppercaseConfirm,passOptions.lowercaseConfirm ){
-  
-  for(var i=0; i<passOptions.passwordLength;i++){
-    randomArray(i);
-    console.log(i)
+   for (var i=0;i<passOptions.passwordLength;i++)
+    var pass = randomArrayGen(i)
+    return pass;
 
   }
   // console.log(randomAlphNum)
   // console.log(randomSpecialChar)
   // console.log(randomUpperCase.toUpperCase())
  }
- 
-};
+ ;
 function randomGenerator(key){
    var pass = Math.floor(Math.random()*key.length)
    //console.log(key[pass])
