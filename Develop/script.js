@@ -13,6 +13,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  console.log(password)
   //generatePassword()
 
 }
@@ -36,7 +37,8 @@ function generatePassword(){
    var pass = Math.floor(Math.random()*specialChar.length)
    //console.log(pass)
    console.log(specialChar[pass])
-   password.textContent =specialChar;
+  
+   return specialChar[pass];
 
  }
 
