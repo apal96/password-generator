@@ -17,7 +17,7 @@ https://apal96.github.io/password-generator/
 ## Deployed Link
 
 * [See Live Site](https://apal96.github.io/password-generator/)
-![Alt text](Images/Screen Shot 2021-06-22 at 11.45.03 PM.png?raw=true)
+![Alt text](/Users/apal/Desktop/Homework/password-generator/password-generator/password-gen.gif?raw=true)
 
 
 
