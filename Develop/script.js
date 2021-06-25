@@ -13,7 +13,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  console.log(password)
+  console.log(passwordText.value)
   //generatePassword()
 
 }
@@ -33,14 +33,13 @@ function generatePassword(){
  var specialCharacter= confirm("Click OK to confirm using special characters");
  var upperCase = confirm("Click OK to confirm using upper case characters");
  var lowerCase = confirm("Click OK to confirm using lower case characters");
+ if(specialCharacters && upperCase && lowerCase)   {
  for (var i=0;i<passLength;i++){
-   var pass = Math.floor(Math.random()*specialChar.length)
-   //console.log(pass)
-   console.log(specialChar[pass])
-  
-   return specialChar[pass];
-
+   var pass = Math.floor(Math.random()*passLength)
+  specialChar[pass] ;
+   return letterNumbers[pass]
  }
+}
 
 
 }else{
